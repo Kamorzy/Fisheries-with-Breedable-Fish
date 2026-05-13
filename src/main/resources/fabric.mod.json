@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "fisheries_wbf",
+  "version": "${version}",
+  "name": "Fisheries with Breedable Fish",
+  "description": "Lightweight, fishery reproduction for cod, salmon, pufferfish, and tropical fish.",
+  "authors": ["Kamorzy"],
+  "contact": {
+    "repo": "https://github.com/Kamorzy/TBD"
+  },
+  "license": "LGPLv3",
+  "icon": "assets/fisheries_wbf/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "kamorzy.fisheries_wbf.FisheriesWbfModEntry"
+    ]
+  },
+  "mixins": [
+    "fisheries_wbf.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.5",
+    "fabric-api": "*",
+    "java": ">=25",
+    "minecraft": ">=26.1"
+  }
+}
